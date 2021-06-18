@@ -1,0 +1,541 @@
+<html lang="en" style="">
+   <script async="" src="//cdn.raygun.io/raygun4js/raygun.min.js" style=""></script><script src="chrome-extension://ljdobmomdgdljniojadhoplhkpialdid/page/prompt.js" style=""></script><script src="chrome-extension://ljdobmomdgdljniojadhoplhkpialdid/page/runScript.js" style=""></script>
+   <head style="">
+      <meta charset="utf-8" style="">
+      <link rel="icon" href="/favicon.ico" style="">
+      <meta name="viewport" content="width=device-width,initial-scale=1" style="">
+      <meta name="theme-color" content="#000000" style="">
+      <meta name="description" content="Ready Dashboard" style="">
+      <link rel="apple-touch-icon" href="/logo152.png" style="">
+      <link rel="manifest" href="/manifest.json" style="">
+      <title style="">Ready Dashboard</title>
+      <script type="text/javascript" style="">!function(n,e,r,o,t,c,s,u){n.RaygunObject=t,n[t]=n[t]||function(){(n[t].o=n[t].o||[]).push(arguments)},c=e.createElement(r),s=e.getElementsByTagName(r)[0],c.async=1,c.src="//cdn.raygun.io/raygun4js/raygun.min.js",s.parentNode.insertBefore(c,s),u=n.onerror,n.onerror=function(e,r,o,c,s){u&&u(e,r,o,c,s),s||(s=new Error(e)),n[t].q=n[t].q||[],n[t].q.push({e:s})}}(window,document,"script",0,"rg4js")</script>
+      <link href="/static/css/2.1781c263.chunk.css" rel="stylesheet" style="">
+      <link href="/static/css/main.fbe58a40.chunk.css" rel="stylesheet" style="">
+      <style data-emotion="css" style=""></style>
+      <style type="text/css" style="">#katalon{font-family:monospace;font-size:13px;background-color:rgba(0,0,0,.7);position:fixed;top:0;left:0;right:0;display:block;z-index:999999999;line-height: normal} #katalon div{padding:0;margin:0;color:#fff;} #katalon kbd{display:inline-block;padding:3px 5px;font:13px Consolas,"Liberation Mono",Menlo,Courier,monospace;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb;font-weight: bold} div#katalon-spy_elementInfoDiv {color: lightblue; padding: 0px 5px 5px} div#katalon-spy_instructionDiv {padding: 5px 5px 2.5px}</style>
+      <style type="text/css" style="">#katalon{font-family:monospace;font-size:13px;background-color:rgba(0,0,0,.7);position:fixed;top:0;left:0;right:0;display:block;z-index:999999999;line-height: normal} #katalon div{padding:0;margin:0;color:#fff;} #katalon kbd{display:inline-block;padding:3px 5px;font:13px Consolas,"Liberation Mono",Menlo,Courier,monospace;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb;font-weight: bold} div#katalon-spy_elementInfoDiv {color: lightblue; padding: 0px 5px 5px} div#katalon-spy_instructionDiv {padding: 5px 5px 2.5px}</style>
+      <style type="text/css" style="">#katalon{font-family:monospace;font-size:13px;background-color:rgba(0,0,0,.7);position:fixed;top:0;left:0;right:0;display:block;z-index:999999999;line-height: normal} #katalon div{padding:0;margin:0;color:#fff;} #katalon kbd{display:inline-block;padding:3px 5px;font:13px Consolas,"Liberation Mono",Menlo,Courier,monospace;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb;font-weight: bold} div#katalon-spy_elementInfoDiv {color: lightblue; padding: 0px 5px 5px} div#katalon-spy_instructionDiv {padding: 5px 5px 2.5px}</style>
+      <style type="text/css" data-rbd-always="3" style=""> [data-rbd-drag-handle-context-id="3"] {
+         -webkit-touch-callout: none;
+         -webkit-tap-highlight-color: rgba(0,0,0,0);
+         touch-action: manipulation;
+         } [data-rbd-droppable-context-id="3"] { overflow-anchor: none; }
+      </style>
+      <style type="text/css" data-rbd-dynamic="3" style=""> [data-rbd-drag-handle-context-id="3"] {
+         cursor: -webkit-grab;
+         cursor: grab;
+         }
+      </style>
+      <style type="text/css" style="">#katalon{font-family:monospace;font-size:13px;background-color:rgba(0,0,0,.7);position:fixed;top:0;left:0;right:0;display:block;z-index:999999999;line-height: normal} #katalon div{padding:0;margin:0;color:#fff;} #katalon kbd{display:inline-block;padding:3px 5px;font:13px Consolas,"Liberation Mono",Menlo,Courier,monospace;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb;font-weight: bold} div#katalon-spy_elementInfoDiv {color: lightblue; padding: 0px 5px 5px} div#katalon-spy_instructionDiv {padding: 5px 5px 2.5px}</style>
+      <style type="text/css">#katalon{font-family:monospace;font-size:13px;background-color:rgba(0,0,0,.7);position:fixed;top:0;left:0;right:0;display:block;z-index:999999999;line-height: normal} #katalon div{padding:0;margin:0;color:#fff;} #katalon kbd{display:inline-block;padding:3px 5px;font:13px Consolas,"Liberation Mono",Menlo,Courier,monospace;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb;font-weight: bold} div#katalon-spy_elementInfoDiv {color: lightblue; padding: 0px 5px 5px} div#katalon-spy_instructionDiv {padding: 5px 5px 2.5px}</style>
+      <style type="text/css">#katalon{font-family:monospace;font-size:13px;background-color:rgba(0,0,0,.7);position:fixed;top:0;left:0;right:0;display:block;z-index:999999999;line-height: normal} #katalon div{padding:0;margin:0;color:#fff;} #katalon kbd{display:inline-block;padding:3px 5px;font:13px Consolas,"Liberation Mono",Menlo,Courier,monospace;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb;font-weight: bold} div#katalon-spy_elementInfoDiv {color: lightblue; padding: 0px 5px 5px} div#katalon-spy_instructionDiv {padding: 5px 5px 2.5px}</style>
+      <style type="text/css">#katalon{font-family:monospace;font-size:13px;background-color:rgba(0,0,0,.7);position:fixed;top:0;left:0;right:0;display:block;z-index:999999999;line-height: normal} #katalon div{padding:0;margin:0;color:#fff;} #katalon kbd{display:inline-block;padding:3px 5px;font:13px Consolas,"Liberation Mono",Menlo,Courier,monospace;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb;font-weight: bold} div#katalon-spy_elementInfoDiv {color: lightblue; padding: 0px 5px 5px} div#katalon-spy_instructionDiv {padding: 5px 5px 2.5px}</style>
+      <style type="text/css">#katalon{font-family:monospace;font-size:13px;background-color:rgba(0,0,0,.7);position:fixed;top:0;left:0;right:0;display:block;z-index:999999999;line-height: normal} #katalon div{padding:0;margin:0;color:#fff;} #katalon kbd{display:inline-block;padding:3px 5px;font:13px Consolas,"Liberation Mono",Menlo,Courier,monospace;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb;font-weight: bold} div#katalon-spy_elementInfoDiv {color: lightblue; padding: 0px 5px 5px} div#katalon-spy_instructionDiv {padding: 5px 5px 2.5px}</style>
+      <style type="text/css">#katalon{font-family:monospace;font-size:13px;background-color:rgba(0,0,0,.7);position:fixed;top:0;left:0;right:0;display:block;z-index:999999999;line-height: normal} #katalon div{padding:0;margin:0;color:#fff;} #katalon kbd{display:inline-block;padding:3px 5px;font:13px Consolas,"Liberation Mono",Menlo,Courier,monospace;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb;font-weight: bold} div#katalon-spy_elementInfoDiv {color: lightblue; padding: 0px 5px 5px} div#katalon-spy_instructionDiv {padding: 5px 5px 2.5px}</style>
+      <script src="chrome-extension://ljdobmomdgdljniojadhoplhkpialdid/page/prompt.js"></script><script src="chrome-extension://ljdobmomdgdljniojadhoplhkpialdid/page/runScript.js"></script>
+   </head>
+   <body style="">
+      <noscript style="">You need to enable JavaScript to run this app.</noscript>
+      <div id="root" style="">
+         <div class="app" style="">
+            <div class="app-layout_layout__35kCy" style="">
+               <div class="app-layout_sidebar__2RdSe" style="">
+                  <div class="app-layout_sidebarUser__2B3kQ" style="">
+                     <div class="app-layout_readyIcon__1ct1Y" style=""><img class="app-layout_readyIconImg__2YaQm" src="/static/media/ready-colour-icon.7c13b522.png" alt="Ready" style=""></div>
+                     <div class="app-layout_sidebarUserInfo__RTrt1" style="">
+                        <p class="app-layout_sidebarUserInfoName__1aaXs" style="">Irena Potashnik</p>
+                        <button class="app-layout_sidebarContextSwitcherButton__1BKXF" style="">
+                           <p class="app-layout_sidebarContextSwitcherParagraph__39UiV" style=""><span class="app-layout_sidebarContextSwitcherContextLabel__3UQHb" style="">Ready Automation Testing</span><i class="icon-dashboard-icons_arrow-right" style=""></i></p>
+                        </button>
+                     </div>
+                     <button type="button" class="icon-button app-layout_toogleSidebarButton__20YxJ" id="sidebar-toggler" style=""><i class="icon-dashboard-icons_close" style=""></i></button>
+                  </div>
+                  <div class="app-layout_sidebarNavigation__FUv_U" style="">
+                     <div class="app-layout_sidebarNavigationPages__1dli6" style=""><a class="app-layout_sidebarNavigationLink__28VTT" href="/companies/609adc66b84876001f4499ed/transactions?query=startDate%3D2021-06-09T00%253A00%253A00-05%253A00%26endDate%3D2021-06-16T23%253A59%253A59-05%253A00" style="">Transactions</a><a class="app-layout_sidebarNavigationLink__28VTT" href="/companies/609adc66b84876001f4499ed/orders" style="">Orders</a><a class="app-layout_sidebarNavigationLink__28VTT" href="/companies/609adc66b84876001f4499ed/serverAssignment" style="">Server Assignment</a><a class="app-layout_sidebarNavigationLinkActive__qTz9w" href="/companies/609adc66b84876001f4499ed/menu-builder" style="">Menu Builder</a><a class="app-layout_sidebarNavigationLink__28VTT" href="/companies/609adc66b84876001f4499ed/out-of-stock" style="">Menu Items</a><a class="app-layout_sidebarNavigationLink__28VTT" href="/companies/609adc66b84876001f4499ed/schedules" style="">Schedules</a><a class="app-layout_sidebarNavigationLink__28VTT" href="/companies/609adc66b84876001f4499ed/users" style="">Users</a><a class="app-layout_sidebarNavigationLink__28VTT" href="/companies/609adc66b84876001f4499ed/securityRoles" style="">Security Roles</a><a class="app-layout_sidebarNavigationLink__28VTT" href="/companies/609adc66b84876001f4499ed/companyLocations" style="">Location Settings</a></div>
+                     <div style=""><button class="app-layout_sidebarNavigationButton__lRyVq" style="">Log Out</button></div>
+                  </div>
+               </div>
+               <div class="formActionBar" style="top: 0px; z-index: 2;">
+                  <div class="formActionBar__buttons" style="">
+                     <div class="container button-container" style=""><button class="button  button--secondary button--size-small" type="button" style=""><span class="button--label undefined" style="">Cancel</span><img src="/static/media/ready-progress-spinner.1dd5056e.svg" alt="loading" style=""></button></div>
+                     <div class="container button-container" style=""><button class="button  button--primary button--size-small" type="button" style=""><span class="button--label undefined" style="">Save Changes</span><img src="/static/media/ready-progress-spinner.1dd5056e.svg" alt="loading" style=""></button></div>
+                  </div>
+               </div>
+               <div class="app-layout_layoutContent__2Q2gh " style="">
+                  <div class="app-layout_header__Bv3de" style="">
+                     <div class="app-layout_headerTitleContainer__8CoWq" style="">
+                        <div class="app-layout_headerTitle__Vl1km" style="">
+                           <div class="app-layout_headerTitleWithControls__2_R1U" style="">
+                              <button type="button" class="icon-button app-layout_headerSidebarToggler__3l3xS" id="header-sidebar-toggler" style=""><i class="icon-dashboard-icons_menu" style=""></i></button>
+                              <h1 class="app-layout_headerTitleText__3Pr2E" style="">Menu Builder</h1>
+                              <div class="app-layout_headerTitleControlsWrapper__sLpA6" style="">
+                                 <span class="app-layout_headerTitleControls__2Iidf" style="">
+                                    <div class="LocationSelectorLink_container__HLW_c" style="">
+                                       <a class="LocationSelectorLink_link__sKTE7" href="/companies/609adc66b84876001f4499ed/menu-builder" style="">
+                                          <div class="LocationSelectorLink_iconContainer__2aEbO" style=""><span class="icon-dashboard-icons_location LocationSelectorLink_icon__3KZbm" style=""></span></div>
+                                          <div class="LocationSelectorLink_locationText__2wCJM" style="">AT - Micros 3700 Order Ahead (Freedom Pay)</div>
+                                          <div class="LocationSelectorLink_changeText__C9gyt" style=""> (change)</div>
+                                       </a>
+                                    </div>
+                                 </span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="app-layout_mainContentWrapper__2zJV_" style="">
+                     <div class="app-layout_mainContentWithin__3a0my" style="">
+                        <div class="tabs" style="">
+                           <div class="tabs__list tabs__list--white" style="">
+                              <div class="tabs__list__item" style=""><a href="/companies/609adc66b84876001f4499ed/locations/60a3ef0ae54023001de0c28d/menu-builder/menus" style="">Menus</a></div>
+                              <div class="tabs__list__item tabs__list__item--selected" style=""><span style="">Items &amp; Mods</span></div>
+                              <div class="tabs__list__item" style=""><a href="/companies/609adc66b84876001f4499ed/locations/60a3ef0ae54023001de0c28d/menu-builder/item-groups" style="">Item Groups</a></div>
+                              <div class="tabs__list__item" style=""><a href="/companies/609adc66b84876001f4499ed/locations/60a3ef0ae54023001de0c28d/menu-builder/mod-groups" style="">Modifier Groups</a></div>
+                           </div>
+                           <div class="tab__content" style="">
+                              <div style=""></div>
+                           </div>
+                        </div>
+                        <div class="ActionHeader_container__2u-jB" style="">
+                           <div class="ActionHeader_backLinkSection__3O2Kk" style="">
+                              <div class="ActionHeader_backLink__27_zW" style=""><a class="IconLink_iconLink__1K-Ep " href="/companies/609adc66b84876001f4499ed/locations/60a3ef0ae54023001de0c28d/menu-builder/items-and-mods?page=1" style=""><i class="ActionHeader_leftArrowIcon__2lGxy icon-dashboard-icons_arrow-left" style=""></i></a></div>
+                              <div class="ActionHeader_textWrapper__2QEf- ActionHeader_textWrapperWithBackLink__anMWg" style="">
+                                 <div class="ActionHeader_textSection__2fxXt ActionHeader_inline__3NjL2" style="">
+                                    <h2 class="ActionHeader_text__3gVzJ" style="">FirstItemDD</h2>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="ActionHeader_actions__M5T8_" style="">
+                              <div class="ActionHeader_actionMenu__1loTl" style="">
+                                 <div class="overflow-button" style="">
+                                    <div class="overflow-button__button-wrapper" style=""><button type="button" class="icon-button icon-button-overflow " style=""><i class="icon-dashboard-icons_ellipsis" style=""></i></button></div>
+                                    <div class="drop-down-menu" style="">
+                                       <div class="drop-down-menu__options  drop-down-menu__options-snap-right drop-down-menu__options-max-width_medium" style=""><button type="button" class="drop-down-menu__option
+                                          " style="">Duplicate</button><button type="button" class="drop-down-menu__option
+                                          " style="">Delete</button></div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="ActionHeader_actionButtons__2OpL7" style="">
+                                 <div class="ActionHeader_actionButton__QkCUB" style="">
+                                    <div class="container button-container" style=""><button class="button  button--secondary-gray-bg button--size-small" type="button" style=""><span class="button--label undefined" style="">Duplicate</span><img src="/static/media/ready-progress-spinner.1dd5056e.svg" alt="loading" style=""></button></div>
+                                 </div>
+                                 <div class="ActionHeader_actionButton__QkCUB" style="">
+                                    <div class="container button-container" style=""><button class="button  button--secondary-gray-bg button--size-small" type="button" style=""><span class="button--label undefined" style="">Delete</span><img src="/static/media/ready-progress-spinner.1dd5056e.svg" alt="loading" style=""></button></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="PanelLayout_container__2QRFa PanelLayout_containerStacked__zIXCG" style="">
+                           <div class="PanelLayout_column__3OCwg PanelLayout_columnStacked__hrZNp" style="flex-basis: 66%;">
+                              <div class="Panel_container__3Kyas Panel_containerVerticalSpacing__2tweS" style="">
+                                 <div class="Panel_content__XzcWT" style="">
+                                    <div style="">
+                                       <form class="form" style="">
+                                          <div class="form__control" style="">
+                                             <div class="form__control__wrapper" style="">
+                                                <div class="form__control__label__wrapper " style="">
+                                                   <div style=""><span class="form__control__label " style="">Status</span></div>
+                                                   <p class="form__control__hide__help_instructions" style=""></p>
+                                                </div>
+                                                <div class="form__control__inputs " style="">
+                                                   <div class="form__control__inputs__elements" style="">
+                                                      <div class="MenuItemDetailPage_statusField__2t6oc" style="">
+                                                         <div class="container toggle-container" style="">
+                                                            <div class="toggle  " style="position: relative; display: inline-block; text-align: left; opacity: 1; direction: ltr; border-radius: 12px; transition: opacity 0.25s ease 0s; touch-action: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); user-select: none;">
+                                                               <div class="react-switch-bg" style="height: 24px; width: 58px; margin: 0px; position: relative; border-radius: 12px; cursor: pointer; transition: background 0.25s ease 0s;">
+                                                                  <div style="height: 24px; width: 36px; position: relative; opacity: 0; pointer-events: none; transition: opacity 0.25s ease 0s;"><span class="toggle__text toggle__text--on" style="">on</span></div>
+                                                                  <div style="height: 24px; width: 36px; position: absolute; opacity: 1; right: 0px; top: 0px; pointer-events: none; transition: opacity 0.25s ease 0s;"><span class="toggle__text toggle__text--off" style="">off</span></div>
+                                                               </div>
+                                                               <div class="react-switch-handle" style="height: 22px; width: 22px; display: inline-block; cursor: pointer; border-radius: 50%; position: absolute; transform: translateX(1px); top: 1px; outline: 0px; transition: background-color 0.25s ease 0s, transform 0.25s ease 0s, box-shadow 0.15s ease 0s;"></div>
+                                                               <input type="checkbox" role="switch" style="clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px;">
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                   <div class="form__control__error " style="">
+                                                      <div class="container input-error-container" style="">
+                                                         <p class="input-error" style=""></p>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="form__control" style="">
+                                             <div class="form__control__wrapper" style="">
+                                                <div class="form__control__label__wrapper " style="">
+                                                   <div style=""><span class="form__control__label " style="">POS Item</span></div>
+                                                   <p class="form__control__hide__help_instructions" style=""></p>
+                                                </div>
+                                                <div class="form__control__inputs " style="">
+                                                   <div class="form__control__inputs__elements MenuItemDetailPage_pos__vyr3n" style=""><span class="MenuItemDetailPage_posItemName__H_OyJ" style="">4lb Bag Beef</span><span class="MenuItemDetailPage_posItemId__1a0wv" style="">(15015)</span><button type="button" class="LinkButton_link__3iwBp" style=""><span class="MenuItemDetailPage_posItemLinkText__2nz-J" style="">(Edit)</span></button></div>
+                                                   <div class="form__control__error " style="">
+                                                      <div class="container input-error-container" style="">
+                                                         <p class="input-error" style=""></p>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="form__control" style="">
+                                             <div class="form__control__wrapper" style="">
+                                                <div class="form__control__label__wrapper " style="">
+                                                   <div style="">
+                                                      <div class="form__control__label form__control__label--with-tooltip " style="">
+                                                         Forced Modifiers
+                                                         <div class="Tooltip_container__1eUxx" style="">
+                                                            <span class="icon-dashboard-icons_info-circle" style=""></span>
+                                                            <div class="Tooltip_tooltip__1K7qB" style="">
+                                                               <div class="TextBubble_container__3cB4W" style="">
+                                                                  <div class="TextBubble_arrow__2aeRZ TextBubble_small__3c0_D TextBubble_black__3vXWp TextBubble_left__1HlfC TextBubble_atStart__1YQK2" style=""></div>
+                                                                  <div class="TextBubble_body__3mk7P TextBubble_black__3vXWp" style="">Forced mods are sent to the POS along with the above specified POS item. They are not editable by guests.</div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                   <p class="form__control__hide__help_instructions" style=""></p>
+                                                </div>
+                                                <div class="form__control__inputs " style="">
+                                                   <div class="form__control__inputs__elements" style="">
+                                                      <div class="MenuItemDetailPage_forcedMods__2ubAW" style="">
+                                                         <div class="" style=""><button type="button" class="LinkButton_link__3iwBp" style="">+ Add Forced Modifier</button></div>
+                                                      </div>
+                                                   </div>
+                                                   <div class="form__control__error " style="">
+                                                      <div class="container input-error-container" style="">
+                                                         <p class="input-error" style=""></p>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="form__control" style="">
+                                             <div class="form__control__wrapper" style="">
+                                                <div class="form__control__label__wrapper " style="">
+                                                   <div style=""><span class="form__control__label " style="">Stock Status</span></div>
+                                                   <p class="form__control__hide__help_instructions" style=""></p>
+                                                </div>
+                                                <div class="form__control__inputs " style="">
+                                                    <div class="form__control__inputs__elements" style="">
+
+
+
+                                                        <div class="container checkbox-container" style="">
+                                                            <label class="checkbox  checkbox--checked  " style="">
+                                                                <span class="checkbox__box" style="">
+                                                                    <i class="icon-dashboard-icons_checkmark" style=""></i>
+                                                                </span>
+                                                                <span class="checkbox__label" style="">In Stock</span>
+                                                                <input type="checkbox" checked="" style="">
+                                                            </label>
+                                                        </div>
+
+
+
+                                                   </div>
+                                                   <div class="form__control__error " style="">
+                                                      <div class="container input-error-container" style="">
+                                                         <p class="input-error" style=""></p>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="form__control" style="">
+                                             <div class="form__control__wrapper" style="">
+                                                <div class="form__control__label__wrapper " style="">
+                                                   <div style=""><span class="form__control__label " style="">Display Name *</span></div>
+                                                   <p class="form__control__hide__help_instructions" style=""></p>
+                                                </div>
+                                                <div class="form__control__inputs " style="">
+                                                   <div class="form__control__inputs__elements" style="">
+                                                      <div class="container text-input-container" style=""><input class="text-input     " type="text" placeholder="Enter a display name" value="FirstItemDD" style=""></div>
+                                                   </div>
+                                                   <div class="form__control__error " style="">
+                                                      <div class="container input-error-container" style="">
+                                                         <p class="input-error" style=""></p>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="form__control" style="">
+                                             <div class="form__control__wrapper" style="">
+                                                <div class="form__control__label__wrapper " style="">
+                                                   <div style=""><span class="form__control__label " style="">Description</span></div>
+                                                   <p class="form__control__hide__help_instructions" style=""></p>
+                                                </div>
+                                                <div class="form__control__inputs " style="">
+                                                   <div class="form__control__inputs__elements" style="">
+                                                      <div class="container textarea-container" style=""><textarea placeholder="Enter a description" class="textarea    " style="">First Item Description Data Driven</textarea></div>
+                                                      <div class="max-length-count-container" style=""></div>
+                                                   </div>
+                                                   <div class="form__control__error " style="">
+                                                      <div class="container input-error-container" style="">
+                                                         <p class="input-error" style=""></p>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="form__control" style="">
+                                             <div class="form__control__wrapper" style="">
+                                                <div class="form__control__label__wrapper " style="">
+                                                   <div style=""><span class="form__control__label " style="">Price</span></div>
+                                                   <p class="form__control__hide__help_instructions" style=""></p>
+                                                </div>
+                                                <div class="form__control__inputs " style="">
+                                                   <div class="form__control__inputs__elements" style="">
+                                                      <div class="MenuItemDetailPage_small__2NmSW" style="">
+                                                         <div class="container select-filter-container" style="">
+                                                            <div class="select-filter css-2b097c-container" style="">
+                                                               <div class="select-filter__control css-yk16xz-control" style="">
+                                                                  <div class="select-filter__value-container select-filter__value-container--has-value css-1hwfws3" style="">
+                                                                     <div class="select-filter__single-value css-1uccc91-singleValue" style=""><span class="SelectPriceLevel_priceLevelPrice__3P7kG" style="">$30.00</span><span class="SelectPriceLevel_priceLevelId__2v8Tc" style="">(Default)</span></div>
+                                                                     <input id="react-select-13-input" readonly="" tabindex="0" aria-autocomplete="list" class="css-62g3xt-dummyInput" value="" style="">
+                                                                  </div>
+                                                                  <div class="select-filter__indicators css-1wy0on6" style="">
+                                                                     <span class="select-filter__indicator-separator css-1okebmr-indicatorSeparator" style=""></span>
+                                                                     <div aria-hidden="true" class="select-filter__indicator select-filter__dropdown-indicator css-tlfecz-indicatorContainer" style=""><span class="icon-dashboard-icons_caret-down DropdownIndicator_dropdownIcon__23gTD" style=""></span></div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                   <div class="form__control__error " style="">
+                                                      <div class="container input-error-container" style="">
+                                                         <p class="input-error" style=""></p>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="form__control" style="">
+                                             <div class="form__control__wrapper" style="">
+                                                <div class="form__control__label__wrapper " style="">
+                                                   <div style=""><span class="icon-dashboard-icons_heart-outline form__control__label form__control__label--icon" style=""></span><span class="form__control__label " style="">Popular Item</span></div>
+                                                   <p class="form__control__hide__help_instructions" style=""></p>
+                                                </div>
+                                                <div class="form__control__inputs " style="">
+                                                   <div class="form__control__error " style="">
+                                                      <div class="container input-error-container" style="">
+                                                         <p class="input-error" style=""></p>
+                                                      </div>
+                                                   </div>
+                                                   <div class="form__control__inputs__elements" style="">
+                                                      <div class="container checkbox-container" style=""><label class="checkbox    " style=""><span class="checkbox__box" style=""><i class="icon-dashboard-icons_checkmark" style=""></i></span><span class="checkbox__label" style="">Add to popular item list</span><input type="checkbox" style=""></label></div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="form__control" style="">
+                                             <div class="form__control__wrapper" style="">
+                                                <div class="form__control__label__wrapper " style="">
+                                                   <div style=""><span class="icon-dashboard-icons_clock form__control__label form__control__label--icon" style=""></span><span class="form__control__label " style="">Schedule</span></div>
+                                                   <p class="form__control__hide__help_instructions" style=""></p>
+                                                </div>
+                                                <div class="form__control__inputs " style="">
+                                                   <div class="form__control__inputs__elements" style="">
+                                                      <div class="SettingSchedule_openedContainer__ILvDR" style="">
+                                                         <div class="SettingSchedule_openedSchedule__LyAKL" style="">
+                                                            <div class="SettingSchedule_selectorStatusContainer__3RJ9U" style="">
+                                                               <div class="container select-filter-container" style="">
+                                                                  <div class="select-filter css-2b097c-container" style="">
+                                                                     <div class="select-filter__control css-yk16xz-control" style="">
+                                                                        <div class="select-filter__value-container select-filter__value-container--has-value css-1hwfws3" style="">
+                                                                           <div class="select-filter__single-value css-1uccc91-singleValue" style="">Show during</div>
+                                                                           <input id="react-select-14-input" readonly="" tabindex="0" aria-autocomplete="list" class="css-62g3xt-dummyInput" value="" style="">
+                                                                        </div>
+                                                                        <div class="select-filter__indicators css-1wy0on6" style="">
+                                                                           <span class="select-filter__indicator-separator css-1okebmr-indicatorSeparator" style=""></span>
+                                                                           <div aria-hidden="true" class="select-filter__indicator select-filter__dropdown-indicator css-tlfecz-indicatorContainer" style=""><span class="icon-dashboard-icons_caret-down DropdownIndicator_dropdownIcon__23gTD" style=""></span></div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                            <div class="SettingSchedule_selectorAvailabilityContainer__1V6QN" style="">
+                                                               <div class="form__control" style="">
+                                                                  <div class="form__control__wrapper" style="">
+                                                                     <div class="form__control__label__wrapper form__control__label__wrapper__hidden" style="">
+                                                                        <div style=""><span class="form__control__label " style=""></span></div>
+                                                                        <p class="form__control__hide__help_instructions" style=""></p>
+                                                                     </div>
+                                                                     <div class="form__control__inputs " style="">
+                                                                        <div class="form__control__inputs__elements" style="">
+                                                                           <div class="container select-filter-container" style="">
+                                                                              <div class="select-filter select-filter--searchable css-2b097c-container" style="">
+                                                                                 <div class="select-filter__control css-yk16xz-control" style="">
+                                                                                    <div class="select-filter__value-container select-filter__value-container--is-multi css-1hwfws3" style="">
+                                                                                       <div class="select-filter__placeholder css-1wa3eu0-placeholder">Select a Schedule</div>
+                                                                                       <div class="css-1g6gooi" style="">
+                                                                                          <div class="select-filter__input" style="display: inline-block;">
+                                                                                             <input autocapitalize="none" autocomplete="off" autocorrect="off" id="react-select-15-input" spellcheck="false" tabindex="0" type="text" aria-autocomplete="list" value="" style="box-sizing: content-box; width: 2px; font-size: inherit; opacity: 1; padding: 0px; color: inherit;">
+                                                                                             <div style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 16px; font-family: &quot;Source Sans Pro&quot;, Arial; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
+                                                                                          </div>
+                                                                                       </div>
+                                                                                    </div>
+                                                                                    <div class="select-filter__indicators css-1wy0on6" style="">
+                                                                                       <span class="select-filter__indicator-separator css-1okebmr-indicatorSeparator" style=""></span>
+                                                                                       <div aria-hidden="true" class="select-filter__indicator select-filter__dropdown-indicator css-tlfecz-indicatorContainer" style=""><span class="icon-dashboard-icons_caret-down DropdownIndicator_dropdownIcon__23gTD" style=""></span></div>
+                                                                                    </div>
+                                                                                 </div>
+                                                                              </div>
+                                                                           </div>
+                                                                        </div>
+                                                                        <div class="form__control__error " style="">
+                                                                           <div class="container input-error-container" style="">
+                                                                              <p class="input-error" style=""></p>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                   <div class="form__control__error " style="">
+                                                      <div class="container input-error-container" style="">
+                                                         <p class="input-error" style=""></p>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="form__control" style="">
+                                             <div class="form__control__wrapper" style="">
+                                                <div class="form__control__label__wrapper " style="">
+                                                   <div style=""><span class="icon-dashboard-icons_martini form__control__label form__control__label--icon" style=""></span><span class="form__control__label " style="">Alcohol Tracking</span></div>
+                                                   <p class="form__control__hide__help_instructions" style=""></p>
+                                                </div>
+
+
+
+                                                <div class="form__control__inputs " style="">
+                                                   <div class="form__control__inputs__elements" style="">
+
+                                                       <div class="container checkbox-container" style="">
+                                                           <label class="checkbox    " style="">
+                                                               <span class="checkbox__box" style="">
+                                                                   <i class="icon-dashboard-icons_checkmark" style=""></i>
+                                                               </span>
+                                                               <span class="checkbox__label" style="">Contains Alcohol</span>
+                                                               <input type="checkbox" style="">
+                                                           </label>
+                                                       </div>
+
+                                                   </div>
+                                                   <div class="form__control__error " style="">
+                                                      <div class="container input-error-container" style="">
+                                                         <p class="input-error" style=""></p>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </form>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="PanelLayout_column__3OCwg PanelLayout_columnStacked__hrZNp" style="flex-basis: 34%;">
+                              <div class="Panel_container__3Kyas Panel_containerVerticalSpacing__2tweS" style="">
+                                 <div class="Panel_content__XzcWT" style="">
+                                    <div class="MenuItemDetailPage_image__20t8N" style="">
+                                       <label class="image-uploader_imageUploaderLabel__cxPg7" style="">
+                                          <div class="image-uploader_imageUploaderPlaceholder__1J9A_" style="max-width: 500px;">
+                                             <i class="icon-dashboard-icons_camera image-uploader_cameraIcon__1Ax0Y" style=""></i>
+                                             <div style="padding-top: 48%;"></div>
+                                          </div>
+                                          <input type="file" accept="image/jpeg, image/png" class="image-uploader_imageUPloaderInput__2Gr4V" style="">
+                                       </label>
+                                       <div class="image-uploader_imageUploaderHelpText__3hKyL" style="">
+                                          <div style=""><strong style="">Size:</strong> 375px wide, 180px high, <strong style="">Format:</strong> JPG, PNG</div>
+                                       </div>
+                                       <div class="image-uploader_imageUploaderControls__2fCsr" style="">
+                                          <div class="container button-container" style=""><button class="button  button--primary button--size-small" type="button" style=""><span class="button--label undefined" style="">Add Image</span><img src="/static/media/ready-progress-spinner.1dd5056e.svg" alt="loading" style=""></button></div>
+                                       </div>
+                                    </div>
+                                    <div class="MenuItemDetailPage_thumbnailImage__b-r4C" style="">
+                                       <p class="MenuItemDetailPage_thumbnailLabel__1xqNt" style="">thumbnail</p>
+                                       <label class="image-uploader_imageUploaderLabel__cxPg7" style="">
+                                          <div class="image-uploader_imageUploaderPlaceholder__1J9A_" style="max-width: 100px;">
+                                             <i class="icon-dashboard-icons_camera image-uploader_cameraIcon__1Ax0Y" style=""></i>
+                                             <div style="padding-top: 100%;"></div>
+                                          </div>
+                                          <input type="file" accept="image/jpeg, image/png" class="image-uploader_imageUPloaderInput__2Gr4V" style="">
+                                       </label>
+                                       <div class="image-uploader_imageUploaderHelpText__3hKyL" style="">
+                                          <div style=""><strong style="">Size: </strong><span style="">200px wide, 200px high, </span><strong style="">Format: </strong><span style="">JPG, PNG, </span><strong style="">Max Size: </strong><span style="">50kb</span></div>
+                                       </div>
+                                       <div class="image-uploader_imageUploaderControls__2fCsr" style="">
+                                          <div class="container button-container" style=""><button class="button  button--primary button--size-small" type="button" style=""><span class="button--label undefined" style="">Add Image</span><img src="/static/media/ready-progress-spinner.1dd5056e.svg" alt="loading" style=""></button></div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="MenuItemDetailPage_modifiersHeader__2YxYq" style="">
+                           <div class="MenuItemDetailPage_modifiersHeaderText__3ft0s" style="">Modifiers</div>
+                           <div class="MenuItemDetailPage_modifiersHeaderControls__-2VVN" style="">
+                              <div class="container button-container" style=""><button class="button  button--primary button--size-small" type="button" style=""><span class="button--label undefined" style="">+ Modifier Group</span><img src="/static/media/ready-progress-spinner.1dd5056e.svg" alt="loading" style=""></button></div>
+                           </div>
+                           <div class="MenuItemDetailPage_modifiersHeaderOverflow__1X8xH" style="">
+                              <div class="overflow-button" style="">
+                                 <div class="overflow-button__button-wrapper" style=""><button type="button" class="icon-button icon-button-overflow " style=""><i class="icon-dashboard-icons_ellipsis" style=""></i></button></div>
+                                 <div class="drop-down-menu" style="">
+                                    <div class="drop-down-menu__options  drop-down-menu__options-snap-right drop-down-menu__options-max-width_medium" style=""><button type="button" class="drop-down-menu__option
+                                       " style="">+ Modifier Group</button></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div data-rbd-droppable-id="droppable" data-rbd-droppable-context-id="3" class="MenuItemDetailPage_modifiers__2Y8F6" style="">
+                           <div class="EmptyResult_regular__JNdw- EmptyResult_container__1yeYt" style="">
+                              <p class="EmptyResult_title__39Vfz" style="">Add Item Modifiers</p>
+                              <p class="EmptyResult_paragraph__2ZV0F" style="">Add modifier groups to this item so your guests can customize their order.</p>
+                           </div>
+                        </div>
+                        <div class="MenuItemDetailPage_pairingsHeader__6lqlV" style="">
+                           <div class="MenuItemDetailPage_pairingsHeaderText__3TPv9" style="">Recommended Pairings</div>
+                           <div class="MenuItemDetailPage_pairingsHeaderControls__2hN2m" style="">
+                              <div class="container button-container" style=""><button class="button  button--primary button--size-small" type="button" style=""><span class="button--label undefined" style="">+ Add Items</span><img src="/static/media/ready-progress-spinner.1dd5056e.svg" alt="loading" style=""></button></div>
+                           </div>
+                           <div class="MenuItemDetailPage_pairingsHeaderOverflow__2mwBz" style="">
+                              <div class="overflow-button" style="">
+                                 <div class="overflow-button__button-wrapper" style=""><button type="button" class="icon-button icon-button-overflow " style=""><i class="icon-dashboard-icons_ellipsis" style=""></i></button></div>
+                                 <div class="drop-down-menu" style="">
+                                    <div class="drop-down-menu__options  drop-down-menu__options-snap-right drop-down-menu__options-max-width_medium" style=""><button type="button" class="drop-down-menu__option
+                                       " style="">+ Add Items</button></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="MenuItemDetailPage_pairings__MXybn" style="">
+                           <div class="EmptyResult_regular__JNdw- EmptyResult_container__1yeYt" style="">
+                              <p class="EmptyResult_title__39Vfz" style="">Add Items for Recommendation</p>
+                              <p class="EmptyResult_paragraph__2ZV0F" style="">Recommended pairings let you suggest to your guests other items they might like to try in addition to this menu item.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="Toastify" style=""></div>
+            </div>
+         </div>
+      </div>
+      <div id="modal" style=""></div>
+      <script style="">!function(e){function r(r){for(var n,a,l=r[0],f=r[1],i=r[2],c=0,s=[];c<l.length;c++)a=l[c],Object.prototype.hasOwnProperty.call(o,a)&&o[a]&&s.push(o[a][0]),o[a]=0;for(n in f)Object.prototype.hasOwnProperty.call(f,n)&&(e[n]=f[n]);for(p&&p(r);s.length;)s.shift()();return u.push.apply(u,i||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,l=1;l<t.length;l++){var f=t[l];0!==o[f]&&(n=!1)}n&&(u.splice(r--,1),e=a(a.s=t[0]))}return e}var n={},o={1:0},u=[];function a(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,a),t.l=!0,t.exports}a.m=e,a.c=n,a.d=function(e,r,t){a.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},a.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},a.t=function(e,r){if(1&r&&(e=a(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(a.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)a.d(t,n,function(r){return e[r]}.bind(null,n));return t},a.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return a.d(r,"a",r),r},a.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},a.p="/";var l=this["webpackJsonpready.dashboard"]=this["webpackJsonpready.dashboard"]||[],f=l.push.bind(l);l.push=r,l=l.slice();for(var i=0;i<l.length;i++)r(l[i]);var p=f;t()}([])</script><script src="/static/js/2.5091cb38.chunk.js" style=""></script><script src="/static/js/main.da5e4cbe.chunk.js" style=""></script>
+      <div id="rbd-announcement-3" aria-live="assertive" aria-atomic="true" style="position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); clip-path: inset(100%);"></div>
+      <div id="rbd-hidden-text-3-hidden-text-6" style="display: none;">
+         Press space bar to start a drag.
+         When dragging you can use the arrow keys to move the item around and escape to cancel.
+         Some screen readers may require you to be in focus mode or to use your pass through key
+      </div>
+   </body>
+</html>

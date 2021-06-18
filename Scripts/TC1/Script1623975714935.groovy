@@ -29,14 +29,7 @@ WebUI.navigateToUrl(url.toString())
  * </div>
  */
 TestObject input_In_Stock = createTestObject('//span[text()="In Stock"]//following-sibling::input')
-WebUI.verifyElementPresent(input_In_Stock, 5, FailureHandling.STOP_ON_FAILURE)
-Boolean is_In_Stock_checked = Boolean.valueOf(WebUI.getAttribute(input_In_Stock, "checked"))
-println("${input_In_Stock.toString()} is_In_Stock_checked=${is_In_Stock_checked}")
-if (is_In_Stock_checked) {
-	KeywordUtil.logInfo("${input_In_Stock.toString()} has the checked attribute present")
-} else {
-	KeywordUtil.markFailed("${input_In_Stock.toString()} does not have the checked attribute")
-}
+WebUI.verifyElementChecked(input_In_Stock, 3)
 
 /*
  * Let's check if the checkbox "Contains Alcohol" is NOT checked. If is checked, this test will fails.
@@ -52,14 +45,7 @@ if (is_In_Stock_checked) {
  * </div>
  */
 TestObject input_Contains_Alcohol = createTestObject('//span[text()="Contains Alcohol"]//following-sibling::input')
-WebUI.verifyElementPresent(input_Contains_Alcohol, 5, FailureHandling.STOP_ON_FAILURE)
-Boolean is_Contains_Alcohol_checked = Boolean.valueOf(WebUI.getAttribute(input_Contains_Alcohol, "checked"))
-println("${input_Contains_Alcohol.toString()} value_checked=${is_Contains_Alcohol_checked}")
-if (is_Contains_Alcohol_checked) {
-	KeywordUtil.markFailed("${input_In_Stock.toString()} has the checked attribute present")
-} else {
-	KeywordUtil.logInfo("${input_In_Stock.toString()} does not have the checked attribute")
-}
+WebUI.verifyElementNotChecked(input_Contains_Alcohol, 3)
 
 WebUI.closeBrowser()
 
